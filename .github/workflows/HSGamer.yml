@@ -7,7 +7,6 @@ on:
       - '.github/workflows/HSGamer.yml'
   schedule:
     - cron: '0 0 */3 * *'
-
 jobs:
   BetterDialogs:
     uses: ./.github/workflows/maven-build.yml

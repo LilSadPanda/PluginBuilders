@@ -7,7 +7,6 @@ on:
       - '.github/workflows/Auxilor.yml'
   schedule:
     - cron: '0 */6 * * *'
-
 jobs:
   EcoEnchants:
     uses: ./.github/workflows/gradle-build.yml

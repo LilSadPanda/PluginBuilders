@@ -14,11 +14,11 @@ jobs:
     with:
       repository: 'BetterGUI-MC/BetterDialogs'
       name: 'BetterDialogs'
-      java: '17'
+      java: '21'
 
   ExtraStorage:
     uses: ./.github/workflows/maven-build.yml
     with:
       repository: 'HSGamer/ExtraStorage'
       name: 'ExtraStorage'
-      java: '17'
+      java: '21'

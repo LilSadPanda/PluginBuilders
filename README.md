@@ -31,6 +31,7 @@ Below are examples of plugins currently built by this repository.
 - **License:** [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)  
 - **Notes:**  
   Built using the official source code provided by BetterGUI-MC.  
+  Requires Java 21+ for compilation, matching the upstream configuration.  
   Redistribution must include the Apache 2.0 license and attribution as required by the original project.
 
 ### ✨ EcoEnchants  
@@ -45,6 +46,7 @@ Below are examples of plugins currently built by this repository.
 - **License:** [MIT](https://opensource.org/licenses/MIT)  
 - **Notes:**  
   Maven-based storage expansion utilities maintained by HSGamer.  
+  Requires Java 21+ to compile because of the CoinsEngine dependency.  
   Always review the upstream repository for the latest license terms.
 
 ---

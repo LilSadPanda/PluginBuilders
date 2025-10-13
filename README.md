@@ -56,6 +56,62 @@ Below are examples of plugins currently built by this repository.
   HSGamer’s minigame framework for Minecraft servers.  
   Built with Maven and requires Java 21+.
 
+### 🧨 zSpawner  
+- **Repository:** [Maxlego08/zSpawner](https://github.com/Maxlego08/zSpawner)  
+- **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+- **Notes:**  
+  Bukkit/Spigot mob spawner manager maintained by Maxlego08.  
+  Built with Maven; artifacts bundle the GPL-3.0 license.
+
+### 🪣 zDrawer  
+- **Repository:** [Maxlego08/zDrawer](https://github.com/Maxlego08/zDrawer)  
+- **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+- **Notes:**  
+  Storage drawer plugin from Maxlego08 compiled via Maven.  
+  Redistribute only in accordance with GPL-3.0 requirements.
+
+### 📜 zQuests  
+- **Repository:** [Maxlego08/zQuests](https://github.com/Maxlego08/zQuests)  
+- **License:** **Not declared upstream** (no license file)  
+- **Notes:**  
+  Gradle-based quest framework.  
+  Because no license file is provided, the artifact includes a `NO_LICENSE_FOUND.txt` reminder—verify usage rights with the author.
+
+### 🛒 zShop  
+- **Repository:** [GroupeZ-dev/zShop](https://github.com/GroupeZ-dev/zShop)  
+- **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+- **Notes:**  
+  Gradle project offering shop mechanics for Groupe Z.  
+  GPL-3.0 license is bundled with every artifact.
+
+### 🔱 zKoth  
+- **Repository:** [GroupeZ-dev/zKoth](https://github.com/GroupeZ-dev/zKoth)  
+- **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+- **Notes:**  
+  King-of-the-Hill plugin built using Gradle.  
+  Ensure GPL-3.0 obligations are observed when redistributing.
+
+### 🛡️ zAntiAutoClick  
+- **Repository:** [GroupeZ-dev/zAntiAutoClick](https://github.com/GroupeZ-dev/zAntiAutoClick)  
+- **License:** **Not declared upstream** (no license file)  
+- **Notes:**  
+  Anti auto-click detection plugin compiled via Gradle.  
+  Artifacts include a `NO_LICENSE_FOUND.txt` placeholder; obtain explicit permission before sharing binaries.
+
+### 🏙️ PlotSquared  
+- **Repository:** [IntellectualSites/PlotSquared](https://github.com/IntellectualSites/PlotSquared)  
+- **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+- **Notes:**  
+  Popular plot management plugin maintained by IntellectualSites.  
+  Built with Gradle; artifacts bundle the GPL-3.0 license.
+
+### 🛰️ AntiCheatAddition  
+- **Repository:** [Photon-GitHub/AntiCheatAddition](https://github.com/Photon-GitHub/AntiCheatAddition)  
+- **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
+- **Notes:**  
+  Photon’s anti-cheat additions built via Maven.  
+  Artifacts include the GPL-3.0 license as distributed upstream.
+
 ---
 
 ## ⚖️ Licensing & Attribution
@@ -81,6 +137,14 @@ When build artifacts are made publicly available:
 | EcoEnchants | GPL-3.0 | [Auxilor/EcoEnchants](https://github.com/Auxilor/EcoEnchants) |
 | ExtraStorage | MIT | [HSGamer/ExtraStorage](https://github.com/HSGamer/ExtraStorage) |
 | GamesInTheBox | Apache-2.0 | [GamesInTheBox-MC/GamesInTheBox](https://github.com/GamesInTheBox-MC/GamesInTheBox) |
+| zSpawner | GPL-3.0 | [Maxlego08/zSpawner](https://github.com/Maxlego08/zSpawner) |
+| zDrawer | GPL-3.0 | [Maxlego08/zDrawer](https://github.com/Maxlego08/zDrawer) |
+| zQuests | No license declared | [Maxlego08/zQuests](https://github.com/Maxlego08/zQuests) |
+| zShop | GPL-3.0 | [GroupeZ-dev/zShop](https://github.com/GroupeZ-dev/zShop) |
+| zKoth | GPL-3.0 | [GroupeZ-dev/zKoth](https://github.com/GroupeZ-dev/zKoth) |
+| zAntiAutoClick | No license declared | [GroupeZ-dev/zAntiAutoClick](https://github.com/GroupeZ-dev/zAntiAutoClick) |
+| PlotSquared | GPL-3.0 | [IntellectualSites/PlotSquared](https://github.com/IntellectualSites/PlotSquared) |
+| AntiCheatAddition | GPL-3.0 | [Photon-GitHub/AntiCheatAddition](https://github.com/Photon-GitHub/AntiCheatAddition) |
 
 ---
 

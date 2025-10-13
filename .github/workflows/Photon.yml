@@ -1,0 +1,17 @@
+name: Photon
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/Photon.yml'
+  schedule:
+    - cron: '30 */6 * * *'
+
+jobs:
+  AntiCheatAddition:
+    uses: ./.github/workflows/maven-build.yml
+    with:
+      repository: 'Photon-GitHub/AntiCheatAddition'
+      name: 'AntiCheatAddition'
+      java: '17'

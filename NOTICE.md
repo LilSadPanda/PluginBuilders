@@ -63,6 +63,86 @@ This repository’s build automation code and workflows are licensed under the M
 
 ---
 
+### 🧨 zSpawner
+- **Author(s):** Maxlego08  
+- **Repository:** [https://github.com/Maxlego08/zSpawner](https://github.com/Maxlego08/zSpawner)  
+- **License:** GNU General Public License v3.0 (GPL-3.0)  
+- **Notice:**  
+  This product includes software distributed under the GPL-3.0 license.  
+  The full license text is provided in the upstream repository and bundled artifact.
+
+---
+
+### 🪣 zDrawer
+- **Author(s):** Maxlego08  
+- **Repository:** [https://github.com/Maxlego08/zDrawer](https://github.com/Maxlego08/zDrawer)  
+- **License:** GNU General Public License v3.0 (GPL-3.0)  
+- **Notice:**  
+  This product includes software distributed under the GPL-3.0 license.  
+  The full license text is provided in the upstream repository and bundled artifact.
+
+---
+
+### 📜 zQuests
+- **Author(s):** Maxlego08  
+- **Repository:** [https://github.com/Maxlego08/zQuests](https://github.com/Maxlego08/zQuests)  
+- **License:** Not declared (no license file present)  
+- **Notice:**  
+  No license information is published in the upstream repository.  
+  Built artifacts therefore include a `NO_LICENSE_FOUND.txt` reminder to verify permissions with the author before redistribution.
+
+---
+
+### 🛒 zShop
+- **Author(s):** Groupe Z / Maxlego08  
+- **Repository:** [https://github.com/GroupeZ-dev/zShop](https://github.com/GroupeZ-dev/zShop)  
+- **License:** GNU General Public License v3.0 (GPL-3.0)  
+- **Notice:**  
+  This product includes software distributed under the GPL-3.0 license.  
+  The full license text is bundled with each artifact.
+
+---
+
+### 🔱 zKoth
+- **Author(s):** Groupe Z / Maxlego08  
+- **Repository:** [https://github.com/GroupeZ-dev/zKoth](https://github.com/GroupeZ-dev/zKoth)  
+- **License:** GNU General Public License v3.0 (GPL-3.0)  
+- **Notice:**  
+  This product includes software distributed under the GPL-3.0 license.  
+  The full license text is bundled with each artifact.
+
+---
+
+### 🛡️ zAntiAutoClick
+- **Author(s):** Groupe Z / Maxlego08  
+- **Repository:** [https://github.com/GroupeZ-dev/zAntiAutoClick](https://github.com/GroupeZ-dev/zAntiAutoClick)  
+- **License:** Not declared (no license file present)  
+- **Notice:**  
+  No license information is published in the upstream repository.  
+  Built artifacts therefore include a `NO_LICENSE_FOUND.txt` reminder to verify permissions with the author before redistribution.
+
+---
+
+### 🏙️ PlotSquared
+- **Author(s):** IntellectualSites  
+- **Repository:** [https://github.com/IntellectualSites/PlotSquared](https://github.com/IntellectualSites/PlotSquared)  
+- **License:** GNU General Public License v3.0 (GPL-3.0)  
+- **Notice:**  
+  This product includes software distributed under the GPL-3.0 license.  
+  The full license text is bundled with each artifact.
+
+---
+
+### 🛰️ AntiCheatAddition
+- **Author(s):** Photon  
+- **Repository:** [https://github.com/Photon-GitHub/AntiCheatAddition](https://github.com/Photon-GitHub/AntiCheatAddition)  
+- **License:** GNU General Public License v3.0 (GPL-3.0)  
+- **Notice:**  
+  This product includes software distributed under the GPL-3.0 license.  
+  The full license text is bundled with each artifact.
+
+---
+
 ## 📬 Contact for Removal Requests
 
 If you are the **owner or authorized maintainer** of a plugin listed here and would like your project to be removed from this repository’s build process,  

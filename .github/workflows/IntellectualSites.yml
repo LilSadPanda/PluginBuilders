@@ -1,0 +1,17 @@
+name: IntellectualSites
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/IntellectualSites.yml'
+  schedule:
+    - cron: '0 */3 * * *'
+
+jobs:
+  PlotSquared:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: 'IntellectualSites/PlotSquared'
+      name: 'PlotSquared'
+      java: '17'

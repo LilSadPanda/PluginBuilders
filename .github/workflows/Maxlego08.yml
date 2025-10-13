@@ -1,0 +1,52 @@
+name: Maxlego08
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/Maxlego08.yml'
+  schedule:
+    - cron: '15 */6 * * *'
+
+jobs:
+  zSpawner:
+    uses: ./.github/workflows/maven-build.yml
+    with:
+      repository: 'Maxlego08/zSpawner'
+      name: 'zSpawner'
+      java: '17'
+
+  zDrawer:
+    uses: ./.github/workflows/maven-build.yml
+    with:
+      repository: 'Maxlego08/zDrawer'
+      name: 'zDrawer'
+      java: '17'
+
+  zQuests:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: 'Maxlego08/zQuests'
+      name: 'zQuests'
+      java: '17'
+
+  zShop:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: 'GroupeZ-dev/zShop'
+      name: 'zShop'
+      java: '17'
+
+  zKoth:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: 'GroupeZ-dev/zKoth'
+      name: 'zKoth'
+      java: '17'
+
+  zAntiAutoClick:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: 'GroupeZ-dev/zAntiAutoClick'
+      name: 'zAntiAutoClick'
+      java: '17'

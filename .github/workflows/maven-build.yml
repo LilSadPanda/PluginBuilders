@@ -60,7 +60,6 @@ jobs:
         with:
           java-version: ${{ inputs.java }}
           distribution: ${{ inputs.distribution }}
-          cache: maven
 
       - name: Run pre-build commands
         run: |
@@ -115,10 +114,10 @@ jobs:
           done
 
           if ! $license_found; then
-            printf '%s\n%s\n' \
-              'No license file was detected in the repository when this build ran.' \
-              'Always review the upstream project to confirm licensing terms.' \
-              > "$ARTIFACT_DIR/NO_LICENSE_FOUND.txt"
+            {
+              echo "No license file was detected in the repository when this build ran."
+              echo "Always review the upstream project to confirm licensing terms."
+            } > "$ARTIFACT_DIR/NO_LICENSE_FOUND.txt"
           fi
 
       - name: Upload artifact

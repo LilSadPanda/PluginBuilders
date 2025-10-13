@@ -40,6 +40,13 @@ Below are examples of plugins currently built by this repository.
   Builds of this plugin are licensed under GPL-3.0.  
   Any redistribution of these binaries or source code must comply with the GPL-3.0 license, including providing access to the full source code and license text.
 
+### 📦 ExtraStorage  
+- **Repository:** [HSGamer/ExtraStorage](https://github.com/HSGamer/ExtraStorage)  
+- **License:** [MIT](https://opensource.org/licenses/MIT)  
+- **Notes:**  
+  Maven-based storage expansion utilities maintained by HSGamer.  
+  Always review the upstream repository for the latest license terms.
+
 ---
 
 ## ⚖️ Licensing & Attribution
@@ -63,6 +70,7 @@ When build artifacts are made publicly available:
 | PluginBuilders scripts and workflows | MIT | [This Repository](https://github.com/LilSadPanda/PluginBuilders) |
 | BetterDialogs | Apache-2.0 | [BetterGUI-MC/BetterDialogs](https://github.com/BetterGUI-MC/BetterDialogs) |
 | EcoEnchants | GPL-3.0 | [Auxilor/EcoEnchants](https://github.com/Auxilor/EcoEnchants) |
+| ExtraStorage | MIT | [HSGamer/ExtraStorage](https://github.com/HSGamer/ExtraStorage) |
 
 ---
 

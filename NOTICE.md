@@ -43,6 +43,16 @@ This repository’s build automation code and workflows are licensed under the M
 
 ---
 
+### 📦 ExtraStorage
+- **Author(s):** HSGamer  
+- **Repository:** [https://github.com/HSGamer/ExtraStorage](https://github.com/HSGamer/ExtraStorage)  
+- **License:** MIT License  
+- **Notice:**  
+  This product includes software developed by HSGamer and distributed under the MIT License.  
+  A copy of the license is available in the upstream repository and bundled with the build artifact.
+
+---
+
 ## 📬 Contact for Removal Requests
 
 If you are the **owner or authorized maintainer** of a plugin listed here and would like your project to be removed from this repository’s build process,  

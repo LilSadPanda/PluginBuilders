@@ -79,31 +79,48 @@ jobs:
           set -euo pipefail
           ${{ inputs.commands }}
 
-      - name: Build with Gradle
-        uses: burrunan/gradle-cache-action@v2
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
         with:
-          job-id: ${{ github.workflow }}-${{ inputs.cache }}
-          arguments: ${{ inputs.tasks }}
-          gradle-version: ${{ inputs.version }}
-          build-root-directory: ${{ inputs.dir }}
-          read-only: ${{ inputs.readonly }}
+          cache-disabled: ${{ inputs.readonly }}
+
+      - name: Build with Gradle
+        shell: bash
+        working-directory: ${{ inputs.dir }}
+        run: |
+          set -euo pipefail
+          ./gradlew ${{ inputs.tasks }}
 
       - name: Prepare artifact bundle
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p "$ARTIFACT_DIR"
+          artifact_path="$PWD/$ARTIFACT_DIR"
+          mkdir -p "$artifact_path"
           shopt -s nullglob globstar
+
+          build_dir='${{ inputs.dir }}'
+          if [ -z "$build_dir" ]; then
+            build_dir='.'
+          fi
+
+          if [ "$build_dir" != "." ]; then
+            pushd "$build_dir" >/dev/null
+          fi
 
           artifacts_found=false
           for path in ${{ inputs.target }}; do
             artifacts_found=true
-            cp -r "$path" "$ARTIFACT_DIR/"
+            cp -r "$path" "$artifact_path/"
           done
 
           if ! $artifacts_found; then
             echo "No build outputs found using pattern: ${{ inputs.target }}" >&2
             exit 1
+          fi
+
+          if [ "$build_dir" != "." ]; then
+            popd >/dev/null
           fi
 
           license_found=false
@@ -118,11 +135,18 @@ jobs:
             NOTICE.*
           )
 
-          for pattern in "${license_patterns[@]}"; do
-            for match in $pattern; do
-              if [ -e "$match" ]; then
-                cp -r "$match" "$ARTIFACT_DIR/"
-                license_found=true
+          declare -a search_roots=(".")
+          if [ "$build_dir" != "." ]; then
+            search_roots+=("$build_dir")
+          fi
+
+          for root in "${search_roots[@]}"; do
+            for pattern in "${license_patterns[@]}"; do
+              for match in "$root"/$pattern; do
+                if [ -e "$match" ]; then
+                  cp -r "$match" "$artifact_path/"
+                  license_found=true
+                fi
               fi
             done
           done
@@ -131,7 +155,7 @@ jobs:
             printf '%s\n%s\n' \
               'No license file was detected in the repository when this build ran.' \
               'Always review the upstream project to confirm licensing terms.' \
-              > "$ARTIFACT_DIR/NO_LICENSE_FOUND.txt"
+              > "$artifact_path/NO_LICENSE_FOUND.txt"
           fi
 
       - name: Upload artifact

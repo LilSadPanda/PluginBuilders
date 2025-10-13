@@ -75,28 +75,32 @@ Below are examples of plugins currently built by this repository.
 - **License:** **Not declared upstream** (no license file)  
 - **Notes:**  
   Gradle-based quest framework.  
-  Because no license file is provided, the artifact includes a `NO_LICENSE_FOUND.txt` reminder—verify usage rights with the author.
+  Because no license file is provided, the artifact includes a `NO_LICENSE_FOUND.txt` reminder—verify usage rights with the author.  
+  Requires Java 21+ due to the targeted Paper API version.
 
 ### 🛒 zShop  
 - **Repository:** [GroupeZ-dev/zShop](https://github.com/GroupeZ-dev/zShop)  
 - **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
 - **Notes:**  
   Gradle project offering shop mechanics for Groupe Z.  
-  GPL-3.0 license is bundled with every artifact.
+  GPL-3.0 license is bundled with every artifact.  
+  Requires Java 21+ to satisfy the custom repository plugin dependency.
 
 ### 🔱 zKoth  
 - **Repository:** [GroupeZ-dev/zKoth](https://github.com/GroupeZ-dev/zKoth)  
 - **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
 - **Notes:**  
   King-of-the-Hill plugin built using Gradle.  
-  Ensure GPL-3.0 obligations are observed when redistributing.
+  Ensure GPL-3.0 obligations are observed when redistributing.  
+  Requires Java 21+ to satisfy recent dependency requirements.
 
 ### 🛡️ zAntiAutoClick  
 - **Repository:** [GroupeZ-dev/zAntiAutoClick](https://github.com/GroupeZ-dev/zAntiAutoClick)  
 - **License:** **Not declared upstream** (no license file)  
 - **Notes:**  
   Anti auto-click detection plugin compiled via Gradle.  
-  Artifacts include a `NO_LICENSE_FOUND.txt` placeholder; obtain explicit permission before sharing binaries.
+  Artifacts include a `NO_LICENSE_FOUND.txt` placeholder; obtain explicit permission before sharing binaries.  
+  Requires Java 21+ due to the bundled zMenu API dependency.
 
 ### 🏙️ PlotSquared  
 - **Repository:** [IntellectualSites/PlotSquared](https://github.com/IntellectualSites/PlotSquared)  
@@ -109,7 +113,7 @@ Below are examples of plugins currently built by this repository.
 - **Repository:** [Photon-GitHub/AntiCheatAddition](https://github.com/Photon-GitHub/AntiCheatAddition)  
 - **License:** [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)  
 - **Notes:**  
-  Photon’s anti-cheat additions built via Maven.  
+  Photon’s anti-cheat additions built via Maven and requires Java 21+.  
   Artifacts include the GPL-3.0 license as distributed upstream.
 
 ---

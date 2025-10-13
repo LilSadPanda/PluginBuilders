@@ -14,4 +14,4 @@ jobs:
     with:
       repository: 'Photon-GitHub/AntiCheatAddition'
       name: 'AntiCheatAddition'
-      java: '17'
+      java: '21'

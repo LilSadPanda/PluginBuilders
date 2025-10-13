@@ -28,25 +28,25 @@ jobs:
     with:
       repository: 'Maxlego08/zQuests'
       name: 'zQuests'
-      java: '17'
+      java: '21'
 
   zShop:
     uses: ./.github/workflows/gradle-build.yml
     with:
       repository: 'GroupeZ-dev/zShop'
       name: 'zShop'
-      java: '17'
+      java: '21'
 
   zKoth:
     uses: ./.github/workflows/gradle-build.yml
     with:
       repository: 'GroupeZ-dev/zKoth'
       name: 'zKoth'
-      java: '17'
+      java: '21'
 
   zAntiAutoClick:
     uses: ./.github/workflows/gradle-build.yml
     with:
       repository: 'GroupeZ-dev/zAntiAutoClick'
       name: 'zAntiAutoClick'
-      java: '17'
+      java: '21'

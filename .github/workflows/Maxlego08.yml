@@ -13,14 +13,14 @@ jobs:
     with:
       repository: 'Maxlego08/zSpawner'
       name: 'zSpawner'
-      java: '17'
+      java: '21'
 
   zDrawer:
     uses: ./.github/workflows/maven-build.yml
     with:
       repository: 'Maxlego08/zDrawer'
       name: 'zDrawer'
-      java: '17'
+      java: '21'
 
   zQuests:
     uses: ./.github/workflows/gradle-build.yml

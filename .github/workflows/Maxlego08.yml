@@ -7,7 +7,6 @@ on:
       - '.github/workflows/Maxlego08.yml'
   schedule:
     - cron: '15 */6 * * *'
-
 jobs:
   zSpawner:
     uses: ./.github/workflows/maven-build.yml

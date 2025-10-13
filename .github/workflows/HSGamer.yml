@@ -22,3 +22,10 @@ jobs:
       repository: 'HSGamer/ExtraStorage'
       name: 'ExtraStorage'
       java: '21'
+
+  GamesInTheBox:
+    uses: ./.github/workflows/maven-build.yml
+    with:
+      repository: 'GamesInTheBox-MC/GamesInTheBox'
+      name: 'GamesInTheBox'
+      java: '21'

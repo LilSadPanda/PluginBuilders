@@ -53,6 +53,16 @@ This repository’s build automation code and workflows are licensed under the M
 
 ---
 
+### 🎮 GamesInTheBox
+- **Author(s):** HSGamer  
+- **Repository:** [https://github.com/GamesInTheBox-MC/GamesInTheBox](https://github.com/GamesInTheBox-MC/GamesInTheBox)  
+- **License:** Apache License 2.0  
+- **Notice:**  
+  This product includes software developed by HSGamer under the Apache License, Version 2.0.  
+  A copy of the license is bundled with the artifact and available at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+---
+
 ## 📬 Contact for Removal Requests
 
 If you are the **owner or authorized maintainer** of a plugin listed here and would like your project to be removed from this repository’s build process,  

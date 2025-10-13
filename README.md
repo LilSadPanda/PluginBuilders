@@ -49,6 +49,13 @@ Below are examples of plugins currently built by this repository.
   Requires Java 21+ to compile because of the CoinsEngine dependency.  
   Always review the upstream repository for the latest license terms.
 
+### 🎮 GamesInTheBox  
+- **Repository:** [GamesInTheBox-MC/GamesInTheBox](https://github.com/GamesInTheBox-MC/GamesInTheBox)  
+- **License:** [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)  
+- **Notes:**  
+  HSGamer’s minigame framework for Minecraft servers.  
+  Built with Maven and requires Java 21+.
+
 ---
 
 ## ⚖️ Licensing & Attribution
@@ -73,6 +80,7 @@ When build artifacts are made publicly available:
 | BetterDialogs | Apache-2.0 | [BetterGUI-MC/BetterDialogs](https://github.com/BetterGUI-MC/BetterDialogs) |
 | EcoEnchants | GPL-3.0 | [Auxilor/EcoEnchants](https://github.com/Auxilor/EcoEnchants) |
 | ExtraStorage | MIT | [HSGamer/ExtraStorage](https://github.com/HSGamer/ExtraStorage) |
+| GamesInTheBox | Apache-2.0 | [GamesInTheBox-MC/GamesInTheBox](https://github.com/GamesInTheBox-MC/GamesInTheBox) |
 
 ---
 

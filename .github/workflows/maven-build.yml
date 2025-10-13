@@ -1,0 +1,128 @@
+name: Maven Build
+
+on:
+  workflow_call:
+    inputs:
+      repository:
+        required: true
+        type: string
+      ref:
+        default: ''
+        required: false
+        type: string
+      target:
+        default: 'target/*.jar'
+        required: false
+        type: string
+      name:
+        default: 'Artifact'
+        required: false
+        type: string
+      commands:
+        default: 'echo Nothing here'
+        required: false
+        type: string
+      java:
+        default: '17'
+        required: false
+        type: string
+      distribution:
+        default: 'temurin'
+        required: false
+        type: string
+      os:
+        default: 'ubuntu-latest'
+        required: false
+        type: string
+      opts:
+        default: '-Xmx2048m --illegal-access=permit'
+        required: false
+        type: string
+      tasks:
+        default: 'clean package'
+        required: false
+        type: string
+
+jobs:
+  build:
+    runs-on: ${{ inputs.os }}
+    env:
+      ARTIFACT_DIR: artifact
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ inputs.repository }}
+          ref: ${{ inputs.ref }}
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4.7.1
+        with:
+          java-version: ${{ inputs.java }}
+          distribution: ${{ inputs.distribution }}
+          cache: maven
+
+      - name: Run pre-build commands
+        run: |
+          set -euo pipefail
+          ${{ inputs.commands }}
+
+      - name: Build with Maven
+        shell: bash
+        run: |
+          set -euo pipefail
+          mvn ${{ inputs.tasks }}
+        env:
+          MAVEN_OPTS: ${{ inputs.opts }}
+
+      - name: Prepare artifact bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$ARTIFACT_DIR"
+          shopt -s nullglob globstar
+
+          artifacts_found=false
+          for path in ${{ inputs.target }}; do
+            artifacts_found=true
+            cp -r "$path" "$ARTIFACT_DIR/"
+          done
+
+          if ! $artifacts_found; then
+            echo "No build outputs found using pattern: ${{ inputs.target }}" >&2
+            exit 1
+          fi
+
+          license_found=false
+          declare -a license_patterns=(
+            LICENSE
+            LICENSE.*
+            LICENCE
+            LICENCE.*
+            COPYING
+            COPYING.*
+            NOTICE
+            NOTICE.*
+          )
+
+          for pattern in "${license_patterns[@]}"; do
+            for match in $pattern; do
+              if [ -e "$match" ]; then
+                cp -r "$match" "$ARTIFACT_DIR/"
+                license_found=true
+              fi
+            done
+          done
+
+          if ! $license_found; then
+            cat <<'EOF' > "$ARTIFACT_DIR/NO_LICENSE_FOUND.txt"
+No license file was detected in the repository when this build ran.
+Always review the upstream project to confirm licensing terms.
+EOF
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.name }}
+          path: ${{ env.ARTIFACT_DIR }}

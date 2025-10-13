@@ -1,0 +1,17 @@
+name: BetterGUI-MC
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/BetterGUI-MC.yml'
+  schedule:
+    - cron: '0 0 */3 * *'
+
+jobs:
+  BetterDialogs:
+    uses: ./.github/workflows/maven-build.yml
+    with:
+      repository: 'BetterGUI-MC/BetterDialogs'
+      name: 'BetterDialogs'
+      java: '17'

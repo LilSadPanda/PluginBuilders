@@ -1,0 +1,20 @@
+name: Auxilor
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/Auxilor.yml'
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  EcoEnchants:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: 'Auxilor/EcoEnchants'
+      target: 'bin/*'
+      name: 'EcoEnchants'
+      java: '17'
+      cache: 'ecoenchants'
+      readonly: true

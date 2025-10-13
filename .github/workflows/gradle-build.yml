@@ -141,12 +141,13 @@ jobs:
 
           for root in "${search_roots[@]}"; do
             for pattern in "${license_patterns[@]}"; do
-              for match in "$root"/$pattern; do
+              matches=("$root"/$pattern)
+              for match in "${matches[@]}"; do
                 if [ -e "$match" ]; then
                   cp -r "$match" "$artifact_path/"
                   license_found=true
                 fi
-              fi
+              done
             done
           done
 

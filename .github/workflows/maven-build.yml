@@ -105,7 +105,8 @@ jobs:
           )
 
           for pattern in "${license_patterns[@]}"; do
-            for match in $pattern; do
+            matches=($pattern)
+            for match in "${matches[@]}"; do
               if [ -e "$match" ]; then
                 cp -r "$match" "$ARTIFACT_DIR/"
                 license_found=true

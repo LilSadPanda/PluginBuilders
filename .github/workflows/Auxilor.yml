@@ -17,3 +17,132 @@ jobs:
       java: '21'
       cache: 'ecoenchants'
       readonly: true
+  EcoJobs:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoJobs"
+      target: "bin/*"
+      name: "EcoJobs"
+      java: 21
+      readonly: true
+  EcoPets:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoPets"
+      target: "bin/*"
+      name: "EcoPets"
+      java: 21
+      readonly: true
+  EcoCrates:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoCrates"
+      target: "bin/*"
+      name: "EcoCrates"
+      java: 21
+      readonly: true
+  EcoMobs:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoMobs"
+      target: "bin/*"
+      name: "EcoMobs"
+      java: 21
+      readonly: true
+  EcoSkills:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoSkills"
+      target: "bin/*"
+      name: "EcoSkills"
+      java: 21
+      readonly: true
+  Reforges:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/Reforges"
+      target: "bin/*"
+      name: "Reforges"
+      java: 21
+      readonly: true
+  Talismans:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/Talismans"
+      target: "bin/*"
+      name: "Talismans"
+      java: 21
+      readonly: true
+  EcoArmor:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoArmor"
+      target: "bin/*"
+      name: "EcoArmor"
+      java: 21
+      readonly: true
+  EcoItems:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoItems"
+      target: "bin/*"
+      name: "EcoItems"
+      java: 21
+      readonly: true
+  StatTrackers:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/StatTrackers"
+      target: "bin/*"
+      name: "StatTrackers"
+      java: 21
+      readonly: true
+  Boosters:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/Boosters"
+      target: "bin/*"
+      name: "Boosters"
+      java: 21
+      readonly: true
+  Actions:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/Actions"
+      target: "bin/*"
+      name: "Actions"
+      java: 21
+      readonly: true
+  EcoQuests:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoQuests"
+      target: "bin/*"
+      name: "EcoQuests"
+      java: 21
+      readonly: true
+  EcoScrolls:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoScrolls"
+      target: "bin/*"
+      name: "EcoScrolls"
+      java: 21
+      readonly: true
+  EcoShop:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoShop"
+      target: "bin/*"
+      name: "EcoShop"
+      java: 21
+      readonly: true
+  EcoBits:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoBits"
+      target: "bin/*"
+      name: "EcoBits"
+      java: 21
+      readonly: true
+

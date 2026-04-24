@@ -14,7 +14,6 @@ jobs:
       repository: 'Auxilor/EcoEnchants'
       target: 'bin/*'
       name: 'EcoEnchants'
-      java: '17'
+      java: '21'
       cache: 'ecoenchants'
       readonly: true
-

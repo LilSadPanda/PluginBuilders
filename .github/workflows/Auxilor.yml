@@ -18,7 +18,7 @@ jobs:
       cache: 'ecoenchants'
       readonly: true
   EcoJobs:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoJobs"
       target: "bin/*"
@@ -26,7 +26,7 @@ jobs:
       java: 21
       readonly: true
   EcoPets:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoPets"
       target: "bin/*"
@@ -34,7 +34,7 @@ jobs:
       java: 21
       readonly: true
   EcoCrates:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoCrates"
       target: "bin/*"
@@ -42,7 +42,7 @@ jobs:
       java: 21
       readonly: true
   EcoMobs:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoMobs"
       target: "bin/*"
@@ -50,7 +50,7 @@ jobs:
       java: 21
       readonly: true
   EcoSkills:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoSkills"
       target: "bin/*"
@@ -58,7 +58,7 @@ jobs:
       java: 21
       readonly: true
   Reforges:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/Reforges"
       target: "bin/*"
@@ -66,7 +66,7 @@ jobs:
       java: 21
       readonly: true
   Talismans:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/Talismans"
       target: "bin/*"
@@ -74,7 +74,7 @@ jobs:
       java: 21
       readonly: true
   EcoArmor:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoArmor"
       target: "bin/*"
@@ -82,7 +82,7 @@ jobs:
       java: 21
       readonly: true
   EcoItems:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoItems"
       target: "bin/*"
@@ -90,7 +90,7 @@ jobs:
       java: 21
       readonly: true
   StatTrackers:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/StatTrackers"
       target: "bin/*"
@@ -98,7 +98,7 @@ jobs:
       java: 21
       readonly: true
   Boosters:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/Boosters"
       target: "bin/*"
@@ -106,7 +106,7 @@ jobs:
       java: 21
       readonly: true
   Actions:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/Actions"
       target: "bin/*"
@@ -114,7 +114,7 @@ jobs:
       java: 21
       readonly: true
   EcoQuests:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoQuests"
       target: "bin/*"
@@ -122,7 +122,7 @@ jobs:
       java: 21
       readonly: true
   EcoScrolls:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoScrolls"
       target: "bin/*"
@@ -130,7 +130,7 @@ jobs:
       java: 21
       readonly: true
   EcoShop:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoShop"
       target: "bin/*"
@@ -138,11 +138,19 @@ jobs:
       java: 21
       readonly: true
   EcoBits:
-    uses: LilSadPanda/ConstructProjects/.github/workflows/gradle-build.yml@main
+    uses: ./.github/workflows/gradle-build.yml
     with:
       repository: "Auxilor/EcoBits"
       target: "bin/*"
       name: "EcoBits"
+      java: 21
+      readonly: true
+  EcoMenus:
+    uses: ./.github/workflows/gradle-build.yml
+    with:
+      repository: "Auxilor/EcoMenus"
+      target: "bin/*"
+      name: "EcoMenus"
       java: 21
       readonly: true
 
